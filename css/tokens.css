@@ -1,0 +1,86 @@
+/* ==========================================================================
+   RARE THREADS — DESIGN TOKENS
+   Single source of truth for brand colour, type, spacing and motion.
+   Change values here, not in individual components.
+   ========================================================================== */
+
+:root {
+  /* ---- Colour: deep black dominant, warm off-white as relief,
+     brass "thread" as the one accent. Restrained on purpose —
+     the garments and photography supply colour, not the UI. ---- */
+  --color-black:      #14110D;   /* dominant background — warm, not pure black */
+  --color-charcoal:   #1E1A15;   /* raised surfaces / cards on black */
+  --color-off-white:  #EDE6D8;   /* raw canvas — text on black, background on light sections */
+  --color-paper:      #E4DBC7;   /* slightly deeper off-white for light-section backgrounds */
+  --color-thread:     #B6862E;   /* brass/gold thread — the one accent colour, used sparingly */
+  --color-thread-dim: #8C6A26;   /* thread accent, lower emphasis (borders, hover) */
+  --color-muted:      #948A76;   /* secondary text on black */
+  --color-muted-dark: #6B6558;   /* secondary text on light */
+  --color-line:       #332E26;   /* hairlines on black */
+  --color-line-light: #CFC3A6;   /* hairlines on off-white */
+  --color-danger:     #A6432E;   /* sold out / errors — used rarely */
+
+  /* ---- Type ----
+     Display: Big Shoulders — tall, condensed, industrial. Reads like a
+       stitched patch or a workwear label, not a fashion-mag serif.
+     Body: Work Sans — clean, humanist, does the reading work quietly.
+     Utility/mono: IBM Plex Mono — set like a garment care label,
+       used for eyebrows, prices, sizes, order numbers, meta info. */
+  --font-display: 'Big Shoulders', 'Arial Narrow', sans-serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-mark: 'Caveat', cursive; /* stitched/handwritten accent — used sparingly, for reproduced garment messages & pull-quotes only */
+
+  --weight-display: 800;
+  --weight-body: 400;
+  --weight-body-medium: 500;
+  --weight-body-bold: 600;
+
+  /* Fluid type scale */
+  --text-eyebrow: clamp(0.72rem, 0.68rem + 0.2vw, 0.8rem);
+  --text-body: clamp(1rem, 0.96rem + 0.2vw, 1.08rem);
+  --text-lead: clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem);
+  --text-h3: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-h2: clamp(2.1rem, 1.7rem + 2vw, 3.2rem);
+  --text-h1: clamp(2.8rem, 2rem + 4.5vw, 5.6rem);
+  --text-display: clamp(3.4rem, 2.2rem + 7vw, 8.5rem);
+
+  /* ---- Spacing (8px base) ---- */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4.5rem;
+  --space-8: 7rem;
+  --space-9: 10rem;
+
+  --content-max: 1240px;
+  --content-narrow: 780px;
+
+  /* ---- Radius — mostly square. This brand is stitched, not rounded. ---- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-pill: 999px;
+
+  /* ---- Shadow — used once, deliberately, never stacked ---- */
+  --shadow-card: 0 18px 40px -22px rgba(0,0,0,0.55);
+
+  /* ---- Motion ---- */
+  --ease-thread: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 160ms;
+  --duration-med: 420ms;
+  --duration-slow: 900ms;
+
+  /* ---- Layout ---- */
+  --header-height: 76px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-med: 0ms;
+    --duration-slow: 0ms;
+  }
+}

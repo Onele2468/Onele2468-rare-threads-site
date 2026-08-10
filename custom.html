@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom / Request — Rare Threads</title>
+<meta name="description" content="Bring your own idea to Rare Threads. Custom and requested pieces are discussed directly with Mbali Shongwe on WhatsApp — every request is evaluated for feasibility before it's accepted.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@500;700;800;900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo-mark" href="index.html" aria-label="Rare Threads home">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 5" opacity="0.7"/>
+        <text x="24" y="30" text-anchor="middle" font-family="'Big Shoulders', sans-serif" font-weight="800" font-size="19" fill="currentColor">RT</text>
+      </svg>
+      <span class="logo-word">Rare Threads</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-nav-link>Home</a></li>
+        <li><a href="story.html" data-nav-link>Story</a></li>
+        <li><a href="collection.html" data-nav-link>Collection</a></li>
+        <li><a href="custom.html" data-nav-link>Custom</a></li>
+        <li><a href="contact.html" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary header-cta wa-btn" data-wa-message="Hi Rare Threads, I have an idea for a custom piece. I found you through the website and would like to discuss it." href="#">Start a request</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li><a href="index.html" data-nav-link>Home</a></li>
+    <li><a href="story.html" data-nav-link>Story</a></li>
+    <li><a href="collection.html" data-nav-link>Collection</a></li>
+    <li><a href="custom.html" data-nav-link>Custom</a></li>
+    <li><a href="contact.html" data-nav-link>Contact</a></li>
+    <li class="mobile-cta"><a class="btn btn-primary btn-full wa-btn" data-wa-message="Hi Rare Threads, I have an idea for a custom piece. I found you through the website and would like to discuss it." href="#">Start a request</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <section class="pad-section" style="padding-top:var(--space-7);">
+    <div class="wrap-narrow">
+      <span class="section-eyebrow">Custom / request</span>
+      <h1 style="font-size:var(--text-h1);margin-top:var(--space-3);">Bring your<br>own idea.</h1>
+      <p style="margin-top:var(--space-4);font-size:var(--text-lead);max-width:44ch;color:var(--color-off-white);">Rare Threads welcomes requested designs — a message, a drawing, a detail you've been picturing. Every request is discussed and evaluated directly with Mbali before it's accepted. Not everything can be made, and that's said upfront rather than promised away.</p>
+    </div>
+  </section>
+
+  <section class="pad-section on-light" data-reveal>
+    <div class="wrap">
+      <span class="section-eyebrow">How it works</span>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Message your idea</h3>
+          <p>Describe what you're picturing on WhatsApp — a message, a drawing, a detail, a reference.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Discuss feasibility &amp; price</h3>
+          <p>Mbali talks it through with you — what's possible, timeline, and cost.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Agree &amp; confirm</h3>
+          <p>Once you're both aligned on the design and price, payment terms are agreed and confirmed.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>Made &amp; delivered</h3>
+          <p>Your piece is made, then collected in Diepsloot or delivered locally where practical.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad-section" data-reveal>
+    <div class="wrap-narrow" style="text-align:center;">
+      <span class="section-eyebrow">Start here</span>
+      <h2 style="font-size:var(--text-h2);margin-top:var(--space-3);">Tell Mbali what you're picturing.</h2>
+      <p class="muted" style="margin-top:var(--space-3);">This opens WhatsApp with a message already started — you can add details before sending.</p>
+
+      <form id="custom-form" style="margin-top:var(--space-6);text-align:left;max-width:520px;margin-inline:auto;">
+        <div class="field">
+          <label for="cf-idea">What's the idea?</label>
+          <textarea id="cf-idea" rows="4" placeholder="e.g. A hoodie with a message about following your own path, unusual front pocket, dark colourway"></textarea>
+        </div>
+        <div class="field">
+          <label for="cf-name">Your name (optional, helps the message)</label>
+          <input id="cf-name" type="text" placeholder="Your name">
+        </div>
+        <a class="btn btn-primary btn-full" id="custom-form-submit" style="margin-top:var(--space-5);" href="#">
+          Continue on WhatsApp
+        </a>
+        <p class="muted" style="margin-top:var(--space-3);font-size:0.85rem;">Nothing here is saved or sent anywhere except into the WhatsApp message you choose to send.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="cta-band" data-reveal>
+    <div class="wrap">
+      <span class="section-eyebrow">Prefer something already made?</span>
+      <h2>See the current collection.</h2>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="collection.html">Explore the collection</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo-mark" href="index.html" aria-label="Rare Threads home">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2 5" opacity="0.7"/>
+            <text x="24" y="30" text-anchor="middle" font-family="'Big Shoulders', sans-serif" font-weight="800" font-size="19" fill="currentColor">RT</text>
+          </svg>
+          <span class="logo-word">Rare Threads</span>
+        </a>
+        <p>An independent, story-driven clothing label designed and made by Mbali Shongwe in Diepsloot, South Africa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="story.html">Story</a>
+        <a href="collection.html">Collection</a>
+        <a href="custom.html">Custom / Request</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Reach us</h4>
+        <a class="wa-btn" data-wa-message="Hi Rare Threads, I found your website and would like to ask about..." href="#">WhatsApp</a>
+        <span data-config-instagram-wrap hidden><a data-config-instagram href="#"></a></span>
+        <span data-config-email-wrap hidden><a data-config-email href="#"></a></span>
+        <address data-config-location>Diepsloot, South Africa</address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Rare Threads — Mbali Shongwe</span>
+      <span>Made in Diepsloot</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/product-render.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var submitBtn = document.getElementById("custom-form-submit");
+    submitBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var idea = document.getElementById("cf-idea").value.trim();
+      var name = document.getElementById("cf-name").value.trim();
+      var message = "Hi Rare Threads, I have an idea for a custom piece.";
+      if (name) message += " My name is " + name + ".";
+      if (idea) message += " Here's what I'm picturing: " + idea;
+      else message += " I'd like to discuss it.";
+      var link = window.buildWhatsAppLink(message);
+      if (link) {
+        window.open(link, "_blank", "noopener");
+      } else {
+        alert("WhatsApp ordering isn't connected yet. Add the real number in js/config.js (WHATSAPP_NUMBER) to switch this on.");
+      }
+    });
+  });
+</script>
+</body>
+</html>
