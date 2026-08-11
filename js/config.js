@@ -1,25 +1,27 @@
 /**
  * RARE THREADS — SITE CONFIGURATION
- * ----------------------------------------------------------------------
- * This is the ONLY file that should need editing to launch the site.
- * Every WhatsApp button on every page reads its number from here —
- * nothing is hardcoded in individual pages or components.
  *
- * [MBALI INPUT REQUIRED]
- *   - WHATSAPP_NUMBER: real WhatsApp Business number, international
- *     format, digits only (no +, spaces or dashes).
- *     e.g. South African number 082 123 4567 -> "27821234567"
+ * This is the main configuration file for the site.
+ * Change business contact/social details here instead of
+ * editing individual pages.
  */
+
 window.RARE_THREADS_CONFIG = {
-  // REQUIRED before launch. Leave empty to keep WhatsApp buttons in a
-  // clearly-marked "not yet connected" state instead of breaking silently.
-  WHATSAPP_NUMBER: "0650668294", // e.g. "27821234567"
 
-  // Optional — shown in the footer / contact page if provided.
-  INSTAGRAM_HANDLE: "", // e.g. "rarethreads.sa"
-  EMAIL: "",            // e.g. "hello@rarethreads.co.za"
+  // WhatsApp Business number — international format, digits only.
+  WHATSAPP_NUMBER: "27650668294",
 
-  // General location only — never publish an exact home address.
+  // Social media
+  FACEBOOK_URL: "https://www.facebook.com/profile.php?id=61575755194195",
+
+  INSTAGRAM_URL: "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=fttoyts",
+
+  TIKTOK_URL: "https://www.tiktok.com/@rsa_onele?_r=1&_t=ZS-98nOEAErydk",
+
+  // Email — replace with Mbali's real email address when he provides it.
+  EMAIL: "",
+
+  // General location only.
   LOCATION_LABEL: "Diepsloot, South Africa",
 
   BRAND_NAME: "Rare Threads",

@@ -130,23 +130,54 @@
     });
 
     var igItems = document.querySelectorAll("[data-config-instagram]");
-    igItems.forEach(function (el) {
-      if (CONFIG.INSTAGRAM_HANDLE) {
-        el.textContent = "@" + CONFIG.INSTAGRAM_HANDLE;
-        el.href = "https://instagram.com/" + CONFIG.INSTAGRAM_HANDLE;
-        el.closest("[data-config-instagram-wrap]") && el.closest("[data-config-instagram-wrap]").removeAttribute("hidden");
-      }
-    });
+igItems.forEach(function (el) {
+  if (CONFIG.INSTAGRAM_URL) {
+    el.textContent = "Instagram";
+    el.href = CONFIG.INSTAGRAM_URL;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
 
-    var emailItems = document.querySelectorAll("[data-config-email]");
-    emailItems.forEach(function (el) {
-      if (CONFIG.EMAIL) {
-        el.textContent = CONFIG.EMAIL;
-        el.href = "mailto:" + CONFIG.EMAIL;
-        el.closest("[data-config-email-wrap]") && el.closest("[data-config-email-wrap]").removeAttribute("hidden");
-      }
-    });
+    var wrap = el.closest("[data-config-instagram-wrap]");
+    if (wrap) wrap.removeAttribute("hidden");
   }
+});
+
+var facebookItems = document.querySelectorAll("[data-config-facebook]");
+facebookItems.forEach(function (el) {
+  if (CONFIG.FACEBOOK_URL) {
+    el.textContent = "Facebook";
+    el.href = CONFIG.FACEBOOK_URL;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+
+    var wrap = el.closest("[data-config-facebook-wrap]");
+    if (wrap) wrap.removeAttribute("hidden");
+  }
+});
+
+var tiktokItems = document.querySelectorAll("[data-config-tiktok]");
+tiktokItems.forEach(function (el) {
+  if (CONFIG.TIKTOK_URL) {
+    el.textContent = "TikTok";
+    el.href = CONFIG.TIKTOK_URL;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+
+    var wrap = el.closest("[data-config-tiktok-wrap]");
+    if (wrap) wrap.removeAttribute("hidden");
+  }
+});
+
+var emailItems = document.querySelectorAll("[data-config-email]");
+emailItems.forEach(function (el) {
+  if (CONFIG.EMAIL) {
+    el.textContent = CONFIG.EMAIL;
+    el.href = "mailto:" + CONFIG.EMAIL;
+
+    var wrap = el.closest("[data-config-email-wrap]");
+    if (wrap) wrap.removeAttribute("hidden");
+  }
+});
 
   document.addEventListener("DOMContentLoaded", function () {
     wireWhatsAppButtons();
