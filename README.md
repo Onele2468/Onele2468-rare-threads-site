@@ -162,5 +162,3 @@ Before this is genuinely launch-ready, the following real information needs to b
 8. **Instagram handle / email**, if Rare Threads wants either linked (optional — the footer and contact page simply hide these until filled in).
 
 Nothing above blocks the site from being previewed, reviewed, or developed further — it blocks the site from being **truthful when published live**, which is why none of it was invented.
-#   O n e l e 2 4 6 8 - r a r e - t h r e a d s - s i t e  
- 
