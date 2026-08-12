@@ -44,6 +44,18 @@
 //   featured: false,
 // };
 
-window.RARE_THREADS_PRODUCTS = [
   // Add real products here, in the shape shown above.
+window.RARE_THREADS_PRODUCTS = [
+  {
+    id: "rare-piece-01",
+    name: "Rare Piece 01",
+    status: "limited",
+    price: 1300,
+    sizes: ["32"],
+    story: "A one-off piece built around unusual fabric combinations and an intentionally different construction. The design is about making something that does not look like everything else.",
+    description: "Distinctive fabric texture with overlapping pockets, including an unusual pocket at the back. The fabric colours and construction are designed to make the piece feel artistic and unexpected.",
+    message: "",
+    images: ["assets/img/products/thabo-piece-01.jpeg"],
+    featured: true,
+  },
 ];

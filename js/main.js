@@ -168,7 +168,7 @@
       .querySelectorAll("[data-config-location]")
       .forEach(function (el) {
         el.textContent =
-          CONFIG.LOCATION_LABEL || "Diepsloot, South Africa";
+          CONFIG.LOCATION_LABEL || "Based in Diepsloot, South Africa";
       });
 
     /* Instagram */

@@ -286,7 +286,33 @@
 }
 @media (min-width: 720px) { .process-grid { grid-template-columns: repeat(4, 1fr); } }
 .process-grid .frame { aspect-ratio: 3/4; }
-.process-grid .fabric-placeholder { min-height: 0; height: 100%; }
+.process-grid .frame {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-grid .frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+
+/* Rare Threads image frames */
+.frame {
+  overflow: hidden;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
 
 /* ---- Steps (custom/request how-it-works) ---- */
 .steps { counter-reset: step; margin-top: var(--space-6); display: grid; gap: var(--space-5); }
