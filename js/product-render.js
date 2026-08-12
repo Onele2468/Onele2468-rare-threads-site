@@ -43,7 +43,7 @@
       var img = document.createElement("img");
       img.src = product.images[0];
       img.alt = product.name + " — Rare Threads";
-      img.loading = "lazy";
+      img.loading = "eager";
       return img;
     }
     return placeholderBlock("Product photo\n[MBALI INPUT REQUIRED]\n" + product.name);
@@ -54,6 +54,7 @@
     a.className = "product-card";
     a.href = "product.html?id=" + encodeURIComponent(product.id);
     a.setAttribute("data-reveal", "");
+    a.classList.add("is-visible");
 
     var frame = document.createElement("div");
     frame.className = "frame";
@@ -155,7 +156,7 @@
         var img = document.createElement("img");
         img.src = src;
         img.alt = product.name + " detail";
-        img.loading = "lazy";
+        img.loading = "eager";
         f.appendChild(img);
         thumbs.appendChild(f);
       });
